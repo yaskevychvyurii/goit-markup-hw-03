@@ -1,0 +1,403 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --active-color: #2196f3;
+  --white-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --footer-background: #2f303a;
+  --buton-background: #f5f4fa;
+  --middle-color: #e5e5e5;
+  --lower-color: #f5f4fa;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+/* изменил list */
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Стили шапки */
+.container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  color: var(--secondary-text-color);
+}
+.logo-blue {
+  color: var(--active-color);
+}
+.site-nav {
+  margin-left: 93px;
+  display: flex;
+}
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  outline: 1px solid red;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+/* Костыль, не правильно что-то прописано site-nave .item - site-nave a (падинги) */
+.site-nav a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--secondary-text-color);
+}
+/* Нужно перепрописать стиль для контактов отдельно */
+.site-nav.contacts {
+  outline: 1px solid red;
+  margin-left: auto;
+}
+.site-nav .connection:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav.contacts a:focus,
+.site-nav.contacts a:hover {
+  color: var(--active-color);
+}
+.site-nav a.current {
+  color: var(--active-color);
+}
+.site-nav.contacts a {
+  color: var(--primary-text-color);
+}
+/* Стили main */
+/* Стили hero */
+.hero-container {
+  display: flex;
+  align-items: center;
+  width: 1630px;
+  height: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+.hero {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 1600px;
+  height: 600px;
+  background-color: var(--footer-background);
+  text-align: center;
+  outline: 2px solid tomato;
+}
+/* изменил hero-title */
+.hero-title {
+  margin-top: 200px;
+  margin-bottom: 30;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+/* Дописал кнопку */
+.hero-button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  background-color: var(--active-color);
+  color: var(--white-color);
+  font-weight: 1300px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/* Стили feature */
+/* что-то не правильно */
+.feature {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 94px;
+  margin-bottom: 0px;
+  outline: 2px solid tomato;
+}
+
+.feature .item {
+  margin: 0px;
+  padding: 0px;
+  width: 270px;
+  display: block;
+}
+.feature .item:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: left;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  outline: 2px solid tomato;
+}
+.feature-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  line-height: 1.71;
+  outline: 2px solid tomato;
+}
+/* Стили команды */
+/* кто тут кривой?)) что за 1170рх? почему нормально не ставится в центр? */
+.section-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  width: 376px;
+  width: 1170px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--secondary-text-color);
+  outline: 2px solid tomato;
+}
+
+.section-img {
+  display: flex;
+  margin-bottom: 94px;
+  width: 1200px;
+}
+.img:not(:last-child) {
+  margin-right: 30px;
+}
+/* Стили team-name */
+.lower-container {
+  width: 1600px;
+  height: 648px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--lower-color);
+  outline: 2px solid tomato;
+}
+.team {
+}
+
+/* Почему маржин-топ не работает корректно? */
+.team-title {
+  padding-top: 94px;
+  margin-top: auto;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-text-color);
+  outline: 2px solid tomato;
+}
+/* Как сделать рамку вокруг картинок */
+.team-list {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+.team .memb {
+  margin-left: 0px;
+  margin-right: 30px;
+}
+.team-name {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--secondary-text-color);
+  outline: 2px solid tomato;
+}
+.team-position {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+/* Стили footer */
+.footer-container {
+  box-sizing: border-box;
+  width: 1600px;
+  height: 252px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--footer-background);
+  outline: 2px solid tomato;
+}
+.footer {
+  box-sizing: border-box;
+  padding-top: 60px;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+.footer .logo {
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+.footer-contacts {
+  font-style: initial;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text-color);
+}
+.footer-address a {
+  margin-bottom: 9px;
+  color: var(--white-color);
+}
+.footer-link {
+  margin-bottom: 9px;
+  color: var(--footer-text-color);
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--active-color);
+}
+/* Стили portfolio */
+.container-action {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+.flex-action {
+  display: flex;
+  width: 1170px;
+  justify-content: center;
+  outline: 2px solid tomato;
+}
+.flex-moove:not(:last-child) {
+  margin-right: 8px;
+}
+.action-filter {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+
+  background-color: var(--buton-background);
+  color: var(--secondary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+}
+
+.action-filter:hover,
+.action-filter:focus {
+  background-color: var(--active-color);
+  color: var(--white-color);
+}
+.container-portfolio {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+  outline: 2px solid tomato;
+}
+.flex-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-element {
+  width: 370px;
+
+  margin-right: 30px;
+}
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-caption-picture {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.filter-options {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Тест container  display: block; */
+
+/* нужно ли обозначать белый если и так белый? */
+.page-header {
+  background-color: var(--white-color);
+}
